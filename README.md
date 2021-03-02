@@ -16,7 +16,7 @@ function escape(input) {
 "><svg onload=prompt(1)> <!--
 ```
 
--Task
+- Task
 
 ```js
 function escape(input) {
