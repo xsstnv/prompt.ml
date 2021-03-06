@@ -114,7 +114,7 @@ function escape(input) {
 <p class="comment" title="*/prompt/*"></p>
 <p class="comment" title="*/(1)/*"></p>
 <p class="comment" title="*/</script>"></p>
-```. Escape encoding
+```
 
 ### A
 
