@@ -153,7 +153,7 @@ function escape(s) {
 }
 ```
 
--Solution
+- Solution
 
 ```js
 </script><script>alert(1)//
