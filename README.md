@@ -1,5 +1,12 @@
 # prompt.ml
 
+## Challenges
+1. Warmup
+2. Closing tag
+3. Parentheses
+7. Splits
+A. Encodings
+
 ### 0. Warmup
 
 - Task
@@ -105,9 +112,9 @@ Solution
 <p class="comment" title="*/prompt/*"></p>
 <p class="comment" title="*/(1)/*"></p>
 <p class="comment" title="*/</script>"></p>
-```
+```. Escape encoding
 
-### A. Escape encodeURIComponent
+### A. Encodings
 
 - Task
 
